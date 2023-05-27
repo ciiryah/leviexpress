@@ -3,7 +3,6 @@ import "./style.css";
 import { BusStop } from "../BusStop";
 
 export const JourneyDetail = ({journey} ) => {
-    console.log(journey)
 
     const stops = Array.from(journey.stops);
 
