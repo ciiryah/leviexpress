@@ -4,6 +4,7 @@ import { App } from './components/App';
 import { createBrowserRouter, RouterProvider, Link } from 'react-router-dom';
 import './style.css';
 import {Home} from "./components/Home";
+import {Reservation} from "./components/Reservation";
 
 export const API_BASE_URL = 'https://apps.kodim.cz/daweb/leviexpress/api';
 
@@ -17,8 +18,8 @@ const router = createBrowserRouter([
                     element: <Home />
                 },
                 {
-                    path: "/reservation",
-                    element: <h2>Detail jízdenky</h2>,
+                    path: "/reservation/:id",
+                    element: <Reservation />
                 }
             ]
         },
